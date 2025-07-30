@@ -2,51 +2,31 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600|Arvo:700");
 
 /*
-	Strongly Typed by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+    Strongly Typed by HTML5 UP
+    html5up.net | @ajlkn
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-/* Previous CSS rules remain the same until color properties */
-
 /* Basic */
-body {
-    background: #f8f9fa;
+html, body {
+    background: #ffffff; /* Pure white background */
 }
 
-body, input, textarea, select {
-    color: #555;
+body {
+    color: #333333; /* Dark gray for text */
 }
 
 h1, h2, h3, h4, h5, h6 {
-    color: #3a5169;
+    color: #2c3e50; /* Dark blue-gray for headings */
 }
 
 a {
-    color: #4a6ea9;
-    border-bottom: solid 1px #d1dbe8;
+    color: #3498db; /* Bright blue for links */
+    border-bottom-color: #bdc3c7; /* Light gray for link borders */
 }
 
 a:hover {
-    color: #2c4b7a;
-    border-bottom-color: rgba(255, 255, 255, 0);
-}
-
-strong, b {
-    color: #3a5169;
-}
-
-hr {
-    border-top: solid 1px #d1dbe8;
-}
-
-blockquote {
-    border-left: solid 0.5em #d1dbe8;
-}
-
-/* Image */
-.image {
-    border: solid 6px #e6ecf5 !important;
+    color: #2980b9; /* Darker blue for hover */
 }
 
 /* Buttons */
@@ -55,7 +35,8 @@ input[type="submit"],
 input[type="reset"],
 button,
 .button {
-    background: #4a6ea9;
+    background: #3498db; /* Bright blue */
+    color: #ffffff !important;
 }
 
 input[type="button"]:hover,
@@ -63,113 +44,66 @@ input[type="submit"]:hover,
 input[type="reset"]:hover,
 button:hover,
 .button:hover {
-    background: #3a5a8a;
-}
-
-input[type="button"]:active,
-input[type="submit"]:active,
-input[type="reset"]:active,
-button:active,
-.button:active {
-    background: #2c4b7a;
-}
-
-input[type="button"].alt,
-input[type="submit"].alt,
-input[type="reset"].alt,
-button.alt,
-.button.alt {
-    background: #6c757d;
-}
-
-input[type="button"].alt:hover,
-input[type="submit"].alt:hover,
-input[type="reset"].alt:hover,
-button.alt:hover,
-.button.alt:hover {
-    background: #5a6268;
-}
-
-input[type="button"].alt:active,
-input[type="submit"].alt:active,
-input[type="reset"].alt:active,
-button.alt:active,
-.button.alt:active {
-    background: #495057;
+    background: #2980b9; /* Darker blue */
 }
 
 /* Header */
 #header {
-    background: #fff;
-}
-
-#header > .container {
-    border-bottom: solid 2px #d1dbe8;
-    box-shadow: inset 0px -8px 0px 0px #fff, inset 0px -10px 0px 0px #d1dbe8;
+    background: #ffffff;
 }
 
 #header h1 {
-    color: #3a5a8a;
+    color: #3498db; /* Bright blue */
 }
 
-/* Nav */
+/* Navigation */
 #nav > ul > li > a:before {
-    background: #6c757d;
-    color: #f8f9fa;
+    background: #3498db; /* Bright blue */
+    color: #ffffff;
 }
 
 #nav > ul > li.active > a:before,
 #nav > ul > li:hover > a:before {
-    background: #4a6ea9;
-    color: #fff;
+    background: #2980b9; /* Darker blue */
 }
 
 #nav > ul > li.active > a > span,
 #nav > ul > li:hover > a > span {
-    color: #4a6ea9;
+    color: #2980b9; /* Darker blue */
 }
 
-/* Features, Banner, Main sections */
+/* Main sections */
 #features, #main {
-    background: #fff;
+    background: #ffffff;
 }
 
+/* Banner */
 #banner {
-    background: #4a6ea9;
-    border-top: solid 2px #d1dbe8;
-    border-bottom: solid 2px #d1dbe8;
-    box-shadow: inset 0px -8px 0px 0px #fff, inset 0px 8px 0px 0px #fff;
+    background: #3498db; /* Bright blue */
+    color: #ffffff;
 }
 
-/* Content and Sidebar sections */
+/* Borders and dividers */
+hr, 
 #content > section,
 #content > article,
 #sidebar > section,
-#sidebar > article {
-    border-top: solid 2px #d1dbe8;
-    box-shadow: inset 0px 8px 0px 0px #fff, inset 0px 10px 0px 0px #d1dbe8;
+#sidebar > article,
+#header > .container,
+#footer,
+#copyright {
+    border-color: #ecf0f1; /* Very light gray */
 }
 
 /* Footer */
 #footer {
-    border-top: solid 2px #d1dbe8;
-    background: #f8f9fa;
-}
-
-/* Copyright */
-#copyright {
-    border-top: solid 2px #d1dbe8;
+    background: #f8f9fa; /* Very light gray */
 }
 
 /* Table */
 table thead {
-    background: #6c757d;
-}
-
-/* Icons */
-ul.icons > li:before {
-    background: #6c757d;
-    color: #f8f9fa;
+    background: #3498db; /* Bright blue */
+    color: #ffffff;
 }
 
 /* Form elements */
@@ -178,21 +112,19 @@ form input[type="email"],
 form input[type="password"],
 form select,
 form textarea {
-    background: #e9ecef;
-    box-shadow: inset 2px 2px 0px 0px rgba(0, 0, 0, 0.05);
+    background: #ecf0f1; /* Very light gray */
 }
 
-form input[type="text"]:focus,
-form input[type="email"]:focus,
-form input[type="password"]:focus,
-form select:focus,
-form textarea:focus {
-    background: #f8f9fa;
+/* Icons */
+ul.icons > li:before {
+    background: #3498db; /* Bright blue */
+    color: #ffffff;
 }
 
 /* Box elements */
 .box.excerpt .date {
-    background: #6c757d;
+    background: #3498db; /* Bright blue */
+    color: #ffffff;
 }
 
-/* The rest of your CSS remains the same */
+/* Keep all other existing CSS rules that aren't related to colors */
